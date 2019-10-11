@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_custom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@android:color/black">
+
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/ib_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:elevation="5dp"
+        android:padding="3dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:elevation="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+
+</RelativeLayout>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@android:drawable/screen_background_dark"-->
+    <!--&gt;-->
+    <!--&lt;!&ndash;android:background="@android:drawable/alert_dark_frame">&ndash;&gt;-->
+    <!--&lt;!&ndash; Load the toolbar here &ndash;&gt;-->
+    <!--&lt;!&ndash;<include&ndash;&gt;-->
+        <!--&lt;!&ndash;layout="@layout/toolbar"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@null"-->
+        <!--android:id="@+id/too"-->
+        <!--app:elevation="0dp">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+
+            <!--app:titleTextColor="#ffff"-->
+            <!--android:background="@null"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+
+             <!--/>-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/gallery"-->
+        <!--android:layout_below="@+id/too"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--tools:layout_editor_absoluteX="20dp"-->
+        <!--tools:layout_editor_absoluteY="20dp"-->
+        <!--android:contentDescription="@string/app_name"/>-->
+<!--</RelativeLayout>-->

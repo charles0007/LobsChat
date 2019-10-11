@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/groupLayout"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+    <!--android:background="@drawable/list_selector"-->
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/passenger_icon_"/>
+
+    </LinearLayout>
+
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/gp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Local Chat"
+        android:typeface="sans"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/gplast_mess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:layout_marginRight="5dip"
+        android:textSize="15dip"
+        android:textColor="@color/colorAccent"
+        />
+
+
+    <TextView
+        android:id="@+id/gp_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dip"
+        android:textSize="10dip"
+        />
+    <TextView
+        android:id="@+id/gpnum_users"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gp_date"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+
+        android:textColor="@color/colorAccent"
+        />
+
+</RelativeLayout>

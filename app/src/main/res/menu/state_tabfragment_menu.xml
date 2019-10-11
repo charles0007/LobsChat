@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <!--<item-->
+    <!--android:id="@+id/action_leave"-->
+    <!--android:orderInCategory="80"-->
+    <!--android:title="Leave"-->
+    <!--app:showAsAction="never" />-->
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="10"
+        android:title="Refresh Location"
+        />
+    <item android:id="@+id/my_product"
+        android:orderInCategory="15"
+        android:title="My Product"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="20"
+        android:title="Settings"
+        />
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="100"
+        android:title="Exit"
+        />
+    <!--<item-->
+    <!--android:id="@+id/miCompose"-->
+    <!--android:icon="@drawable/ic_compose"-->
+    <!--app:showAsAction="ifRoom"-->
+    <!--android:title="Compose">-->
+    <!--</item>-->
+</menu>

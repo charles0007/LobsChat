@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#FF408178 </color>
+    <color name="black">#000</color>
+    <color name="colorPrimary">#FF408178</color>
+    <color name="colorAccent">#FF408178</color>
+    <color name="cancel">#b20e6f</color>
+    <color name="opaque">#33000000</color>
+    <color name="swhite">#ccc</color>
+    <color name="white">#fff</color>
+    <color name="status">#FF008978</color>
+</resources>

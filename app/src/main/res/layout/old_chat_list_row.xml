@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:padding="5dip" >
+    <!--android:background="@drawable/list_selector"-->
+    <!--  ListRow Left sied Thumbnail image -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/mainLayout">
+        <LinearLayout android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dip"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginRight="5dip">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                android:id="@+id/list_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:clickable="true"
+                android:elevation="5dp"
+                android:focusable="true"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/passenger_icon_"
+
+                app:srcCompat="@drawable/default_img"
+
+                />
+
+        </LinearLayout>
+
+        <!-- Title Of Song-->
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/thumbnail"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:typeface="sans"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/last_mess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/thumbnail"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:layout_marginRight="5dip"
+            android:textSize="15dip"
+            android:textColor="@color/colorAccent"
+            />
+
+
+        <TextView
+            android:id="@+id/user_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dip"
+            android:textSize="10dip"
+            />
+        <TextView
+            android:id="@+id/num_users"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dip"
+            android:textSize="10dip"
+            android:visibility="gone"
+
+            />
+        <TextView
+            android:id="@+id/read_mess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_date"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+
+            android:textColor="@color/status"
+
+            />
+        <TextView
+            android:id="@+id/chat_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/otherUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--<ImageView-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:visibility="gone"-->
+    <!--android:id="@+id/gallery"/>-->
+    <!--</LinearLayout>-->
+
+</RelativeLayout>
